@@ -7,7 +7,7 @@ public class ByteSream {
     public static void main(String[] args) {
 
         byte[] myArray = new byte[20];
-        System.out.println(Arrays.toString(myArray));
+//               System.out.println(Arrays.toString(myArray));
 //        try(InputStream input = new FileInputStream("/streamIO/text.txt")) {
 //            int n = input.read(myArray);
 //            System.out.println(input.available());
@@ -20,6 +20,7 @@ public class ByteSream {
         try{
             input = new FileInputStream("C:\\Users\\SDSD\\Documents\\NewTextDocument.txt");
             input.read(myArray);
+            input.read();
         }catch (FileNotFoundException e) {
             e.getMessage();
         }catch (IOException e) {
