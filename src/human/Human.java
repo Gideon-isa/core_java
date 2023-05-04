@@ -1,7 +1,13 @@
 package human;
 
 public class Human {
-    public void human() {
+    private String gender;
+
+    public Human(String gender) {
+        this.gender = gender;
+    }
+
+    public void humanDetails() {
         System.out.println("In human class");
     }
 }
