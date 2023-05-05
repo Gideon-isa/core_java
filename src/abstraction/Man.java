@@ -24,5 +24,6 @@ public class Man extends LivingThing{
     public static void main(String[] args) {
         LivingThing man = new Man();
         man.test2();
+
     }
 }
