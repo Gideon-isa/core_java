@@ -17,13 +17,23 @@ public class Man extends LivingThing{
 
     @Override
     public void test2() {
-        System.out.println("In Man test2 method");
+        System.out.println("In Man test2 method Subclass");
+    };
+
+    public static void test5() {
+        System.out.println("Static method in Man Class");
     };
 
 
     public static void main(String[] args) {
         LivingThing man = new Man();
-        man.test2();
+        Man man1 = new Man();
+//        man.test2();
+//
+//        LivingThing.test5();
+//        Man.test5();
+
+        man1.test2();
 
     }
 }

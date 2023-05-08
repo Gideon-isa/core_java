@@ -13,6 +13,8 @@ public abstract class LivingThing {
      * A method that doesn't have its body is known as an abstract method.
      * We use the same abstract keyword to create abstract methods.
      * There is no body implementation of the method
+     *
+     * They must be Overriden
      * @return
      */
     public abstract int test3(); // no-body implementation; with abstract key word
@@ -20,16 +22,20 @@ public abstract class LivingThing {
     /**
      * This is a regular method
      *
+     * No compulsion to override this method by the subclass
      */
     // Regular method
     public void test2() {
-        System.out.println("Abstract method");
+        System.out.println("Regular method in Parent Class");
     }
 
     /**
      * Regular Static method is allowed
+     * They are inherited by the subclass
      */
-    public static void test5() {};
+    public static void test5() {
+        System.out.println("Static method");
+    };
 
     private class living {
 
