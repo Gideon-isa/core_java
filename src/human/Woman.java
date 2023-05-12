@@ -27,7 +27,9 @@ public class Woman extends Human {
 
     @Override
     public void humanDetails() {
+        String test = "             v";
         super.humanDetails();
+        System.out.println(test);
     }
 
     public void womanDetails() {
@@ -37,6 +39,7 @@ public class Woman extends Human {
 
     public static void main(String[] args) {
         Human man = new Woman("female", "Mariam", "Isa");
+        man.humanDetails();
 
     }
 }
